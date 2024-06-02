@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate" class="bg-transparent">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/indexlogsig.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+</head>
+<body class="bg-[#E5F2FF] flex flex-col items-between gap-8">
+    <img src="{{url_for('static', filename='Assets/icon-login.png')}}" alt="icon-login" class="absolute top-[20%] left-[5%] z-10">
+    <div class="bg-white p-[80px] rounded-l-2xl drop-shadow-lg ml-[40%] flex justify-center items-start">
+        <img src="{{url_for('static', filename='Assets/lungs.png')}}" alt="lungs">
+        <div class="flex flex-col items-left justify-center w-[100%] ml-8 mt-4">
+            <h1 class="font-bold text-3xl">Welcome Back 👋</h1>
+            <div class="mt-8 w-[50%] flex flex-col justify-start items-left gap-4">
+                <form onsubmit="e.preventDefault()" class="w-full flex flex-col justify-start items-left gap-4">
+                    <div class="flex flex-col items-left justify-center gap-1 w-full">
+                        <label>Email</label>
+                        <input type="email" class="input input-bordered w-full border-[#D4D7E3] rounded-lg bg-[#F7FBFF]" placeholder="Example@email.com">
+                    </div>
+                    <div class="flex flex-col items-left justify-center gap-1 w-full">
+                        <label>Password</label>
+                        <input type="password" class="input input-bordered w-full border-[#D4D7E3] rounded-lg bg-[#F7FBFF]" placeholder="At least 8 characters">
+                    </div>
+                    <div class="w-full flex justify-end text-[#1E4AE9]">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary rounded-lg w-full">Sign in</button>
+                </form>
+                <div class="flex items-center justify-center gap-6 text-[#294957] mt-6">
+                    <hr class="w-[44%] text-[#ABABAB]">Or<hr class="w-[44%] text-[#ABABAB]">
+                </div>
+                <a class="btn rounded-lg w-full">Sign in with Google</a>
+                <a class="btn rounded-lg w-full">Sign in with Facebook</a>
+                <div class="p-4 flex items-center justify-center font-bold">
+                    Don't have an account?&nbsp;<a href="#" class="text-[#377DFF]">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="logoInfo">
+            <img src="{{url_for('static', filename='Assets/logo.png')}}" alt="">
+            <p>
+                RespiTune always try to provide the most common of get the proper are for cure Healthcare treatment
+            </p>
+        </div>
+
+        <div class="info" id="company">
+            <h2>Company</h2>
+            <p>About us</p>
+            <p>Doctors</p>
+            <p>Our team</p>
+            <p>Contact us</p> 
+        </div>
+
+        <div class="info" id="contact">
+            <h2>Contact info</h2>
+            <p>
+                Jl. Pahwalan apa aja No. 123, 
+                Bandung, Jawa Barat
+            </p>
+            <p>
+                info@examplesite.com <br>
+                www.examplesite.com
+            </p>
+            <p>+62 123 4567 9892</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mulish";
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.navbar #space{
+    margin-left: 52px;
+}
+
+.navbar #utama{
+    color: #377DFF;
+}
+
+.navbar a{
+    color: #9B9797;
+}
+
+button{
+    width: 83px;
+    height: 33px;
+    border-radius: 13px;
+}
+
+#login{
+    border: 2px solid;
+    outline-color: #377DFF;
+    color: #377DFF;
+    background-color: white;
+}
+
+#signUp{
+    background-color: #377DFF;
+    color: #E5F2FF;
+    border-style: none;
+    outline-color: #377DFF;
+} 
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 174px 128px 227px 134px;
+}
+
+#text_section1{
+    width: 739px;
+}
+
+#text_section1 h2{
+    font-size: 36px;
+    color: #377DFF;
+}
+
+#text_section1 p{
+    color: #9B9797;
+    font-size: 18px;
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#content{
+    width: 1280px;
+    height: 644px;
+    background-color: #E5F2FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 59px;
+}
+
+.blue-text {
+    color: #377DFF;
+}
+
+#text_section2 span{
+    font-size: 36px;
+}
+
+.section3{
+    margin-top: 155px;
+    margin-bottom: 155px;
+    text-align: center;
+}
+
+.section3 span{
+    font: bold;
+    font-size: 36px;
+}
+
+.section3 p{
+    font-size: 18px;
+    margin-top: 48px;
+}
+
+footer{
+    max-width: 100%;
+    height: 400px;
+    background-color:  #E5F2FF;
+    display: flex;
+    flex-direction: row;
+    border-radius: 51px 51px 0px 0px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.logoInfo{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #9B9797;
+    gap: 27px;
+    align-items: start;
+    margin-left: 186px;
+    margin-top: 111px;
+}
+
+footer h2{
+    font-size: 20px;
+    font: bold;
+}
+
+footer p{
+    font-size: 16px;
+    color: #9B9797;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 111px;
+    gap: 18px;
+    align-items: start;
+}
+
+#company{
+    margin-left: 417px;
+}
+
+#contact{
+    width: 100%;
+    margin-left: 143px;
+    margin-right: 194px;
+}

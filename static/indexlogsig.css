@@ -1,0 +1,54 @@
+* {
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+}
+
+footer{
+    max-width: 100%;
+    height: 400px;
+    background-color:  #E5F2FF;
+    display: flex;
+    flex-direction: row;
+    border-radius: 51px 51px 0px 0px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.logoInfo{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #9B9797;
+    gap: 27px;
+    align-items: start;
+    margin-left: 186px;
+    margin-top: 111px;
+}
+
+footer h2{
+    font-size: 20px;
+    font: bold;
+}
+
+footer p{
+    font-size: 16px;
+    color: #9B9797;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 111px;
+    gap: 18px;
+    align-items: start;
+}
+
+#company{
+    margin-left: 417px;
+}
+
+#contact{
+    width: 100%;
+    margin-left: 143px;
+    margin-right: 194px;
+}
