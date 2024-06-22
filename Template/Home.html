@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/homePage.css">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        
+        <a href="{{ url_for('home') }}">
+            <img src="{{url_for('static', filename='Assets/logo.png')}}">
+        </a>
+    
+        <ul class="navbar">
+            <li>
+                <a href="{{ url_for('home') }}" id="utama">Home</a>
+            </li>
+    
+            <li>
+                <a href="{{ url_for('pred') }}" id="space">Indication Diagnosis</a>
+            </li>
+    
+            <li>
+                <a href="{{ url_for('doctor') }}" id="space">Doctors</a>
+            </li>
+    
+            <li>
+                <a href="{{ url_for('aboutus') }}" id="space">About</a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('profile') }}" id="space">Profile</a>
+            </li>
+        </ul>
+        
+        <div>
+            <a href="{{ url_for('login') }}" target="_blank"> 
+                <button id="login">Log in</button>
+            </a>
+            <a href="{{ url_for('signup') }}" target="_blank"> 
+                <button id="signUp">Sign up</button>
+            </a>
+        </div>
+        
+    </header>
+
+    
+    <div class="section1">
+        <div id="content">
+            <label class="check">{{label}}</label>
+            <h2>FOR BETTER HEALTHCARE</h2>
+            <h1>Quality Healthcare Solution <br> for All</h1>
+            <p>Diagnosis always helps to provide proper treatment for all to get the proper cure <br>
+                and healthy life which is the most focused thing for us.
+            </p>
+            <a>Our Services</a>
+            
+            <div id="gambar">
+                <img src="{{url_for('static', filename='Assets/recovered.png')}}">
+                <img src="{{url_for('static', filename='Assets/satisfaction.png')}}">
+                
+            </div>
+            
+        </div>
+        
+        <img src="{{url_for('static', filename='Assets/consult.png')}}" id="consult">
+
+
+    </div>
+
+    <div class="section2">
+        <h2 id="judul_h2">WELCOME TO RESPITUNE</h2>
+        <h1 id="judul_h1">Consult Our Leading Respiratory Specialists <br> for Personalized Care</h1>
+        
+        <div id="content_section2">
+            <img src="{{url_for('static', filename='Assets/section2_home page.png')}}" alt="">
+
+            <div id="text_section2">
+                <h2>Treat with confidence</h2>
+                <p>At RespiTune, your well-being is our priority. We guarantee the 
+                    <br> highest standard of medical care tailored specifically to your 
+                    <br> respiratory health needs. Our team of expert respiratory 
+                    <br> specialists is dedicated to providing you with precise diagnoses 
+                    <br> and personalized treatment plans, ensuring optimal health and 
+                    <br> vitality.
+                </p>
+                <a href="">Learn more</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="section3">
+        <div id="konten">
+            <h1>8500+</h1>
+            <p>Patients happy</p>
+        </div>
+
+        <div id="konten">
+            <h1>120+</h1>
+            <p>Expert doctors</p>
+        </div>
+        
+        <div id="konten">
+            <h1>4.9</h1>
+            <p>Avarage rating</p>
+        </div>
+    </div>
+    
+    <div class="section4">
+        <div id="viewAll">
+            <p id="ourDoctor">OUR DOCTOR</p>
+            <a id="view" href="./../Pages/doctorContact.html">View All</a>
+        </div>
+        
+        <h1>Meet our high quality <br>& expert doctors</h1>
+
+        <div class="doctors">
+            <div id="doctor">
+                <img id="gambarDok" src="{{url_for('static', filename='Assets/doctor1.png')}}" alt="">
+                <h2>dr. lorem ipsum</h2>
+
+                <div id="achvInfo">
+                    <div id="achv">
+                        <img src="{{url_for('static', filename='Assets/Suitcase 1.png')}}" alt="">
+                        
+                        <p>2 years</p>
+                    </div>
+        
+                    <div id="achv">
+                        <img src="{{url_for('static', filename='Assets/Star 1.png')}}" alt="">
+                        <p>4.9 / 5</p>
+                    </div>
+                </div>
+                    
+                
+            </div>
+    
+            <div id="doctor">
+                <img id="gambarDok" src="{{url_for('static', filename='Assets/doctor2.png')}}" alt="">
+                
+                <h2>dr. lorem ipsum</h2>
+
+                <div id="achvInfo">
+                    <div id="achv">
+                        <img src="{{url_for('static', filename='Assets/Suitcase 1.png')}}" alt="">
+                        <p>3 years</p>
+                    </div>
+        
+                    <div id="achv"> 
+                        <img src="{{url_for('static', filename='Assets/Star 1.png')}}" alt="">
+                        <p>4.9 / 5</p>
+                    </div>
+                </div>
+                    
+            </div>
+    
+            <div id="doctor">
+                <img id="gambarDok" src="{{url_for('static', filename='Assets/doctor3.png')}}" alt="">
+                
+                <h2>dr. lorem ipsum</h2>
+
+                <div id="achvInfo">
+                    <div id="achv">
+                        <img src="{{url_for('static', filename='Assets/Suitcase 1.png')}}" alt="">
+                        <p>4 years</p>
+                    </div>
+        
+                    <div id="achv">
+                        <img src="{{url_for('static', filename='Assets/Star 1.png')}}" alt="">
+                        <p>4.9 / 5</p>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="logoInfo">
+            <img src="{{url_for('static', filename='Assets/logo.png')}}" alt="">
+            <p>
+                RespiTune always try to provide the most common of get the proper are for cure Healthcare treatment
+            </p>
+        </div>
+
+        <div class="info" id="company">
+            <h2>Company</h2>
+            <p>About us</p>
+            <p>Doctors</p>
+            <p>Our team</p>
+            <p>Contact us</p> 
+        </div>
+
+        <div class="info" id="contact">
+            <h2>Contact info</h2>
+            <p>
+                Jl. Pahwalan apa aja No. 123, 
+                Bandung, Jawa Barat
+            </p>
+            <p>
+                info@examplesite.com <br>
+                www.examplesite.com
+            </p>
+            <p>+62 123 4567 9892</p>
+        </div>
+    </footer>
+
+</body>
+</html>
